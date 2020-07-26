@@ -6,10 +6,12 @@
   "scripts": {
     "start": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js --mode development --hot",
     "build": "webpack --mode production",
-    "build:css": "tailwind build src/css/style.css -o dist/style.css"
+    "build:css": "tailwind build src/css/style.css -o dist/style.css",
+    "deploy": "gh-pages -d dist"
   },
   "author": "animalworldng",
   "license": "ISC",
+  "homepage": "https://thevetdoctor.github.io/mywebpack",
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "babel-core": "^6.26.3",
