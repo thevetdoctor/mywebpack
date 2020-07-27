@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+background: silver;
+margin: 0 auto;
+width: 60%;
+font-family: cursive;  
+font-size: 1.2em;
+text-align: center;
+}
+
+/* The animation code */
+@keyframes example {
+    0%   {color: red;left:0px; top:0px;}
+    25%  {color: yellow;left:100px; top:0px;}
+    50%  {color: blue;left:100px; top:100px;}
+    75%  {color: blue;left:0px; top:100px;}
+    100% {color: green;left:0px; top:0px;}
+    /* from {
+        background-color: red;
+        width: 100px;
+        height: 90px; 
+    }
+    to {
+        background-color: yellow;
+        color: #fff;
+    } */
+  }
+  
+  /* The element to apply the animation to */
+  p, button {
+    position: relative;
+    animation: example 3s 2 ease-in alternate;
+  }
+ 
