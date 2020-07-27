@@ -5,8 +5,7 @@ const $ = require("jquery");
 
 let peopleList = people(); 
 $.each(peopleList, (x) => {
-    $("body").append("<button class='rounded bg-green-200 mx-2 my-3 px-3 py-3'>" + peopleList[x].name + "</button>")
-    // $("body").append("<p></p>")
+    $("body").append(`<button class='rounded bg-green-400 mx-2 my-3 px-3 py-3 border border-white-1 hover:bg-green 600 hover:text-white'>${peopleList[x].name}</button>`);
 }); 
    
 console.log(peopleList);
