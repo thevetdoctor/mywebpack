@@ -4,7 +4,7 @@
   "description": "webpack tutorial by traversy",
   "main": "./src/app.js",
   "scripts": {
-    "start": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js --mode development --hot",
+    "start": "npm run build:css && npm run build && webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js --mode development --hot",
     "build": "webpack --mode production",
     "build:css": "tailwind build src/css/style.css -o dist/style.css",
     "deploy": "gh-pages -d dist"
